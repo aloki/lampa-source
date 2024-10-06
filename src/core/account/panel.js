@@ -19,7 +19,7 @@ function init(){
 function render(body){
     let account = Permit.account
     let signed  = Boolean(Permit.token)
-    let premium = Utils.countDays(Date.now(), Permit.user.premium)
+    let premium = 1 //Utils.countDays(Date.now(), Permit.user.premium)
 
     if(!window.lampa_settings.account_sync){
         body.find('[data-name="account_use"]').remove()
