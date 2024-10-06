@@ -208,7 +208,7 @@ Object.defineProperty(Account, 'hasPremium', {
 
         if(Storage.get('developer_nopremium', 'false')) return 0
 
-        return user.id ? Utils.countDays(Date.now(), user.premium) : 0
+        return 1 //user.id ? Utils.countDays(Date.now(), user.premium) : 0
     },
     writable: false
 })
